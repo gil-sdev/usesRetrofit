@@ -1,5 +1,8 @@
 package com.example.usesretrofit.models;
 
+/**
+ * It creates a class called Posts.
+ */
 public class Posts {
     public Integer getUserId() {
         return userId;
@@ -42,6 +45,12 @@ public class Posts {
     public Posts() {
     }
 
+
+    public Posts(Integer userId, String title, String body) {
+        this.userId = userId;
+        this.title = title;
+        this.body = body;
+    }
 
     private Integer userId, id;
     private String title, body;
